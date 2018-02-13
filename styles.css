@@ -15,14 +15,39 @@ img {
 
 .Content {
     width: 100vw;
-    height: 100vmax;
     max-width: 1100pt;
     margin: 0 auto;
-    box-shadow: inset 100px 0px 100px -50px #F0EAD6,
-                inset -100px 0px 100px -50px #F0EAD6;
+    box-shadow: inset 200px 0px 200px -50px #F0EAD6,
+                inset -200px 0px 200px -50px #F0EAD6;
     text-align: center;
 }
 .TextContainer {
     width: 90%;
     margin: 0 auto;
+}
+.ButtonContainer {
+    height: 300px;
+    text-align: center;
+}
+.ButtonContainer table {
+    margin: 0 auto;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  border: none;
+  color: #FFF;
+  background: #f7dd88;
+  padding: 5px 30px 10px 30px;
+  text-decoration: none;
+  font-size: 24pt;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background: #fad669;
+  text-decoration: none;
 }
