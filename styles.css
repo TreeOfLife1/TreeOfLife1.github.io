@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24pt;
+}
+
+h4 {text-align: left}
+
+img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+.Content {
+    width: 100vw;
+    height: 100vmax;
+    max-width: 1100pt;
+    margin: 0 auto;
+    box-shadow: inset 100px 0px 100px -50px #F0EAD6,
+                inset -100px 0px 100px -50px #F0EAD6;
+    text-align: center;
+}
+.TextContainer {
+    width: 90%;
+    margin: 0 auto;
+}
