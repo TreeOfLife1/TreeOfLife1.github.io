@@ -6,6 +6,7 @@ body {
 }
 
 h4 {text-align: left}
+p {font-size: 20pt}
 
 img {
     width: 100%;
@@ -27,7 +28,7 @@ img {
     margin: 0 auto;
 }
 .ButtonContainer {
-    height: 300px;
+    height: 180px;
     text-align: center;
 }
 .ButtonContainer table {
@@ -35,6 +36,9 @@ img {
 }
 select {
     width: 200px;
+}
+optgroup option {
+    font-size: 36pt;
 }
 
 
@@ -47,7 +51,7 @@ select {
   background: #f7dd88;
   padding: 5px 30px 10px 30px;
   text-decoration: none;
-  font-size: 36pt;
+  font-size: 48pt;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bolder;
 }
@@ -55,4 +59,20 @@ select {
 .btn:hover {
   background: #fad669;
   text-decoration: none;
+}
+
+.FooterContent {
+    margin-top: 100px;
+    width: auto;
+    height: 200px;
+    text-align: center;
+}
+.FooterContent p {
+    margin: 0;
+    font-size: 18pt;
+}
+
+.PhoneNumber {
+    color: black;
+    text-decoration: none;
 }
