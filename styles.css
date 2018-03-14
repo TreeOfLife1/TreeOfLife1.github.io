@@ -64,12 +64,12 @@ optgroup option {
 .FooterContent {
     margin-top: 100px;
     width: auto;
-    height: 200px;
+    height: 280px;
     text-align: center;
 }
 .FooterContent p {
     margin: 0;
-    font-size: 18pt;
+    font-size: 24pt;
 }
 
 .PhoneNumber {
