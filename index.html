@@ -22,22 +22,39 @@
                 <h4> Thank you for your participation and support!</h4>
             </div>
             <div class="ButtonContainer">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypalForm">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="B23U229UNMMCG">
-                    <button class="btn" type="submit" name="submit">Donate</button>
                     <table>
-                        <tr><td>
-                            <select name="os0">
-                                <optgroup class="Option">
-                                    <option value="Tier 1">$180.00 USD - Brass Leaves</option>
-     	                            <option value="Tier 2">$360.00 USD - Silver Butterflies</option>
-     	                            <option value="Tier 3">$501.00 USD - Gold Doves</option>
-                                </optgroup>
-                            </select>
-                        </td></tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Donation Amount">
+                                Donation Amount
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="os0">
+                                    <option value="Tier 1">Tier 1 $180.00 USD</option>
+                                    <option value="Tier 2">Tier 2 $360.00 USD</option>
+                                    <option value="Tier 3">Tier 3 $501.00 USD</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on1" value="Text on dove butterfly or leaf">
+                                Please include what you'd like to have written on your dove, butterfly, or leaf:
+                            </td>
+                        </tr>
+                        <tr style="height: 20px;">
+                            <td style="height: 20px;">
+                                <input type="text" name="os1" maxlength="200" placeholder="Your quote goes here" id="quoteInput">
+                            </td>
+                        </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="USD">
+                    <button class="btn" type="button" onclick="validate()">Donate</button>
                 </form>
             </div>
             <div class="FooterContent">
@@ -47,4 +64,14 @@
             </div>
         </div>
     </body>
+
+    <script>
+        function validate() {
+            if (document.getElementById('quoteInput').value == "") {
+                alert("Please make sure to include the text you'd like to have written on your dove, butterfly, or leaf.");
+            } else {
+                document.getElementById('paypalForm').submit();
+            }
+        }
+    </script>
 </html>
